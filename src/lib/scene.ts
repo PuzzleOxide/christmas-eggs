@@ -21,7 +21,7 @@ let renderer: THREE.WebGLRenderer;
 //scene.add(cube);
 let cube: THREE.Group<THREE.Object3DEventMap>;
 
-loader.load( '/base_egg.glb', function ( gltf ) {
+loader.load( 'base_egg.glb', function ( gltf ) {
   scene.add( gltf.scene );
   cube = gltf.scene;
 }, undefined, ( error ) => {
