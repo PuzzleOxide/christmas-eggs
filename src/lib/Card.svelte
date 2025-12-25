@@ -27,9 +27,46 @@
     }, 10);
   }}>
     <h1>Merry Christmas!</h1>
-    <p>
-      You all know why you're getting this... {id}
-    </p>
+    {#if id == 1}
+      <p>
+        You all know why you're getting this...
+      </p>
+    {/if}
+    {#if id == 2}
+      <p>
+        This whole idea was absolutely ridiculous. Have a virtual egg to remember it by.
+      </p>
+    {/if}
+    {#if id == 3}
+      <p>
+        Have an eggcelent Christmas!
+      </p>
+    {/if}
+    {#if id == 4}
+      <p>
+        Thanks for joining in the fun!
+      </p>
+    {/if}
+    {#if id == 5}
+      <p>
+        ♫ ...four carabiners, three sources of light, two leather gloves, and a Nalgene bottle full of carbide. ♫
+      </p>
+    {/if}
+    {#if id == 6}
+      <p>
+        You both know why you're getting this...
+      </p>
+    {/if}
+    {#if id == 7}
+      <p>
+        You're going to need quite a few of these.
+      </p>
+    {/if}
+    {#if id == 8}
+      <p>
+        I hope you have a wonderful Christmas!
+      </p>
+    {/if}
   </div>
   <div class="obj">
     <Model xrot={xrot} yrot={yrot} />
@@ -40,6 +77,7 @@
   .card {
     position: relative;
     perspective: 12in;
+    width: 100%;
 
     height: 90%;
   }
@@ -54,7 +92,7 @@
     background-color: rgb(64, 77, 92);
     border-radius: 2rem;
     
-    box-shadow: black 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.5) 1rem 1rem;
     
     display: flex;
     flex-direction: column;

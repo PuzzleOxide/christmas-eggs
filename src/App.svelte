@@ -4,25 +4,9 @@
   import Card from './lib/Card.svelte'
 </script>
 
-<main>
-  <div>
-    <a href="https://vite.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="holder">
-    <Card />
-  </div>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
-</main>
+<div class="holder">
+  <Card />
+</div>
 
 <style>
   .logo {
@@ -39,9 +23,5 @@
   }
   .read-the-docs {
     color: #888;
-  }
-
-  .holder {
-    height: 50vh;
   }
 </style>
